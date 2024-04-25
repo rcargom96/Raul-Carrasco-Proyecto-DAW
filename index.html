@@ -1,0 +1,114 @@
+<!---->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SizzleBite Burgers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <!--Empieza el encabezado-->
+    <header>
+        <a href="#" class="logo"><img src="imagenes/logo.png" alt=""></a>
+        <nav class="navbar">
+            <a href="#home" class="activo">Inicio</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">Sobre Nosotros</a>
+            <a href="#reservas">Reservas</a>
+        </nav>
+
+        <div class="iconos">
+            <i class="fas fa-bars" id="menu"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </header>
+
+    <!--Termina el encabezado-->
+
+    <!--Empieza la seccion de los sliders-->
+
+    <div class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide slide1">
+                    <div class="content">
+                        <img src="" alt="">
+                        <h3>bla bla bla bla</h3>
+                        <h1>bla bla bla bla</h1>
+                        <p>
+                            bla bla bla bla
+                        </p>
+                        <a href="#" class="btn">Pedir ahora</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide slide2">
+                    <div class="content">
+                        <img src="" alt="">
+                        <h3>bla bla bla bla</h3>
+                        <h1>bla bla bla bla</h1>
+                        <p>
+                            bla bla bla bla
+                        </p>
+                        <a href="#" class="btn">Pedir ahora</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide slide3">
+                    <div class="content">
+                        <img src="" alt="">
+                        <h3>bla bla bla bla</h3>
+                        <h1>bla bla bla bla</h1>
+                        <p>
+                            bla bla bla bla
+                        </p>
+                        <a href="#" class="btn">Pedir ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!--Termina la seccion de los sliders-->
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".home-slider", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop:true,
+    });
+  </script>
+
+
+    <!--Este script hace que al pulsar el icono de menu cuando la pantalla 
+    es mas pequeña aparezcan los elementos del menu de navegacion-->
+    <script type="text/javascript">
+        let menu=document.querySelector('#menu');
+        let navbar=document.querySelector('.navbar');
+
+        menu.onclick=() =>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('activo');
+        }
+    </script>
+</body>
+</html>
