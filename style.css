@@ -89,7 +89,7 @@ header .iconos #menu
 /* estilo de la barra de navegacion TERMINA */
 
 /*Empieza estilo FORMULARIO*/
-.form_container
+.form_cont
 {
     position: absolute;
     max-width: 320px;
@@ -106,25 +106,25 @@ header .iconos #menu
     pointer-events: none;
     transition: all 0.4s ease-out;
 }
-.formularios.show .form_container
+.formularios.show .form_cont
 {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
-.signup_form
+.registro_form
 {
     display: none;
 }
-.form_container.active .signup_form
+.form_cont.active .registro_form
 {
     display: block;
 }
-.form_container.active .login_form
+.form_cont.active .inicio_form
 {
     display: none;
 }
-.form_close
+.form_cerrar
 {
     position: absolute;
     top: 10px;
@@ -134,7 +134,7 @@ header .iconos #menu
     opacity: 0.7;
     cursor: pointer;
 }
-.form_container h2
+.form_cont h2
 {
     font-size: 22px;
     color: #0b0217;
@@ -195,7 +195,7 @@ header .iconos #menu
 }
 
 
-.login_signup
+.inicio_registro
 {
     font-size: 12px;
     text-align: center;
@@ -323,7 +323,7 @@ header .iconos #menu
 
 /*EMPIEZA estilo reservas*/
 
-.heading
+.titulo
     {
         text-align: center;
         font-size: 4.5rem;
@@ -332,10 +332,10 @@ header .iconos #menu
         letter-spacing: 1.3px;
     }
 
-.sub-heading
+.sub-titulo
 {
     text-align: center;
-    color: var(--ligth-color);
+    color: #cdaa7c;
     font-size: 2.5rem;
     padding: .5rem 2rem;
     font-weight: 300;
@@ -344,14 +344,14 @@ header .iconos #menu
     display: inline-block;
 }
 
-.reservation
+.reserva
 {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 }
 
-.reservation .image
+.reserva .imagen
 {
     width: 55%;
     background: url(foto.jpg);
@@ -361,42 +361,39 @@ header .iconos #menu
     padding-top: 9rem;
 }
 
-.reservation .form
+.reserva .form
 {
     background: #181818;
     width: 45%;
     padding: 9rem 7%;
 }
 
-.reservation .form h1
+.reserva .form h1
 {
     color: #fff;
 }
 
-.reservation .form-holder
+.reserva .form-contenido
 {
     display: flex;
     grid-gap: 3rem;
     width: 100%;
 }
 
-.reservation .form form input,
-.reservation .form form select
+.reserva .form form input,
+.reserva .form form select
 {
     display: block;
     margin: 2rem 0;
     width: 100%;
     background: none;
     border-bottom: .1rem solid white;
-    color: white;
+    color: #cdaa7c;
     font-size: 1.8rem;
     font-weight: 300;
 }
 
-.reservation .form form input:placeholder
-{
-    color: white;
-}
+
 /*TERMINA estilo reservas*/
 
 
@@ -474,13 +471,15 @@ header .iconos #menu
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    margin-top: -50px;
+    margin-top: -100px;
+    margin-bottom: -100px;
 }
 .banner h2
 {
-    color: #fff;
+    color: #cdaa7c;
     text-transform: uppercase;
     letter-spacing: 5px;
+    font-size: 35px;
     border: 1px solid #cdaa7c;
     padding: 20px;
     font-weight: 800;
@@ -492,19 +491,25 @@ header .iconos #menu
     font-weight: 500;
     font-size: 25px;
 }
-.special
+.producto
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
+    min-height: 60vh;
+    padding: 50px;
+    border: 1px solid #cdaa7c;
+
 }
-.special .special-box
+.producto .producto-box
 {
-    height: 220px;
+    height: 270px;
     width: 160px;
+    margin: 30px;
     background: rgba(0, 0, 0, 0.6);
-    margin-top: -150px;
+
     border: 2px solid #cdaa7c;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
@@ -513,7 +518,7 @@ header .iconos #menu
     justify-content: center;
     align-items: center;
 }
-.special .special-box img
+.producto .producto-box img
 {
     height: 100px;
     width: 100px;
@@ -521,34 +526,44 @@ header .iconos #menu
     object-fit: cover;
     border: 5px solid #cdaa7c;
 }
-.special h1
-{
-    color: black;
-    background-color: #cdaa7c;
-    padding: 10px;
-    font-size: 12px;
-    word-spacing: 5px;
-    text-transform: uppercase;
-    position: absolute;
-    left: 770px;
-    top: 360px;
-}
-.special .special-box h2
+.producto .producto-box h2
 {
     color: #cdaa7c;
     font-size: 15px;
     font-weight: 400;
     padding: 10px;
 }
-.special .special-box h3
+.producto .producto-box h3
 {
     color: #fff;
     font-size: 18px;
     font-weight: 400;
     padding: 5px;
 }
-/*TERMINA ESTILO MENU*/
+.producto .producto-box .añadir-carrito
+{
+    padding: 5px 10px;
+    margin: 10px;
+    border: 1px solid #cdaa7c;
+    background-color: transparent;
+    color: #cdaa7c;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.producto .producto-box .añadir-carrito:hover
+{
+    background: #cdaa7c;
+    color: #050801;
+    box-shadow: 0 0 5px #cdaa7c,
+                0 0 25px #cdaa7c,
+                0 0 50px #cdaa7c,
+                0 0 200px #cdaa7c;
+}
 
+/*TERMINA ESTILO MENU*/
 
 /*ESTILO BARRA DE SCROLL*/
 
@@ -661,17 +676,17 @@ header .iconos #menu
     /*Reservas*/
 
     
-    .reservation .image
+    .reserva .imagen
     {
         width: 0;
     }
 
-    .reservation .form
+    .reserva .form
     {
         width: 100%;
     }
 
-    .reservation .form .form-holder
+    .reserva .form .form-contenido
     {
         display: block;
     }

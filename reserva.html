@@ -27,10 +27,10 @@
 
     <!--Formulario Inicio Sesion y Registro-->
     <section class="formularios">
-        <div class="form_container">
-            <i class="fa-regular fa-circle-xmark form_close"></i>
+        <div class="form_cont">
+            <i class="fa-regular fa-circle-xmark form_cerrar"></i>
             <!--Inicio de Sesion-->
-            <div class="form login_form">
+            <div class="form inicio_form">
                 <form action="#">
                     <h2>Iniciar Sesion</h2>
                     <div class="input_box">
@@ -43,14 +43,14 @@
                     </div>
                     <button class="btn-inicio-sesion">Iniciar Sesion</button>
 
-                    <div class="login_signup">
-                        ¿No tienes una cuenta? <a href="#" id="signup">Registrarse</a>
+                    <div class="inicio_registro">
+                        ¿No tienes una cuenta? <a href="#" id="registro">Registrarse</a>
                     </div>
                 </form>
             </div>
 
             <!--Registrarse-->
-            <div class="form signup_form">
+            <div class="form registro_form">
                 <form action="#">
                     <h2>Registrarse</h2>
                     <div class="input_box">
@@ -77,8 +77,8 @@
                     </div>
                     <button class="btn-inicio-sesion">Registrarse</button>
 
-                    <div class="login_signup">
-                        ¿Ya tienes una cuenta? <a href="#" id="login">Iniciar Sesion</a>
+                    <div class="inicio_registro">
+                        ¿Ya tienes una cuenta? <a href="#" id="inicio">Iniciar Sesion</a>
                     </div>
                 </form>
             </div>
@@ -91,33 +91,31 @@
     <!--Empieza la sección de las reservas-->
 
 
-    <div class="reservation" id="reservation">
-        <div class="image">
+    <div class="reserva" id="reserva">
+        <div class="imagen">
 
         </div>
 
         <div class="form">
-            <h1 class="heading">Reserva una mesa</h1>
-            <center><h3 class="sub-heading">- Visita nuestro restaurante -</h3></center>
+            <h1 class="titulo">Reserva una mesa</h1>
+            <center><h3 class="sub-titulo">- Visita nuestro restaurante -</h3></center>
 
             <form>
-                <div class="form-holder">
+                <div class="form-contenido">
                     <div>
                         <select>
                             <option>1 persona</option>
-                            <option>2 persona</option>
-                            <option>3 persona</option>
-                            <option>4 persona</option>
-                            <option>5 persona</option>
-                            <option>6 persona</option>
+                            <option>2 personas</option>
+                            <option>3 personas</option>
+                            <option>4 personas</option>
+                            <option>5 personas</option>
+                            <option>6 personas</option>
                         </select>
-                        <input type="text" name="" placeholder="Time">
-                        <input type="text" name="" placeholder="Phone">
+                        <input type="time">
                     </div>
                     <div>
-                        <input type="text" name="" placeholder="Date">
-                        <input type="text" name="" placeholder="Name">
-                        <input type="email" name="" placeholder="email">
+                        <input type="date">
+                        <input type="text"placeholder="Nombre">
                     </div>
                     
                 </div>
