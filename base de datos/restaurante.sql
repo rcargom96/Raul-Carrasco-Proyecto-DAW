@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-05-2024 a las 16:37:48
+-- Tiempo de generación: 14-05-2024 a las 18:37:55
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -72,7 +72,8 @@ CREATE TABLE `reservas` (
   `usuario_id` int(11) DEFAULT NULL,
   `fecha_reserva` date NOT NULL,
   `hora_reserva` time NOT NULL,
-  `numero_personas` int(11) NOT NULL
+  `numero_personas` int(11) NOT NULL,
+  `nombre_cliente_reserva` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -82,12 +83,19 @@ CREATE TABLE `reservas` (
 --
 
 CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `nombre_usuario` varchar(100) NOT NULL,
   `contrasena` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `telefono` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`user_id`, `nombre_usuario`, `contrasena`, `email`, `telefono`) VALUES
+(1, 'prueba', 'prueba', 'prueba@prueba', '123456789');
 
 --
 -- Índices para tablas volcadas
@@ -125,7 +133,7 @@ ALTER TABLE `reservas`
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -159,7 +167,7 @@ ALTER TABLE `reservas`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restricciones para tablas volcadas
@@ -176,13 +184,13 @@ ALTER TABLE `detallespedido`
 -- Filtros para la tabla `pedidos`
 --
 ALTER TABLE `pedidos`
-  ADD CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`);
+  ADD CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`user_id`);
 
 --
 -- Filtros para la tabla `reservas`
 --
 ALTER TABLE `reservas`
-  ADD CONSTRAINT `reservas_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`);
+  ADD CONSTRAINT `reservas_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

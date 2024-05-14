@@ -95,11 +95,11 @@
         <div class="imagen">
 
         </div>
-
+        
         <div class="form">
             <h1 class="titulo">Reserva una mesa</h1>
             <center><h3 class="sub-titulo">- Visita nuestro restaurante -</h3></center>
-
+            <!--
             <form>
                 <div class="form-contenido">
                     <div>
@@ -120,8 +120,30 @@
                     
                 </div>
                 <center><a href="#" class="btn">Reserva ahora</a></center>
+            </form>-->
+            <form action="reservar.php" method="POST">
+                <div class="form-contenido">
+                    <div>
+                        <select name="numero_personas">
+                            <option value="1">1 persona</option>
+                            <option value="2">2 personas</option>
+                            <option value="3">3 personas</option>
+                            <option value="4">4 personas</option>
+                            <option value="5">5 personas</option>
+                            <option value="6">6 personas</option>
+                        </select>
+                        <input type="time" name="numero_personas">
+                    </div>
+                    <div>
+                        <input type="date" name="fecha_reserva">
+                        <input type="text" placeholder="Nombre" name="nombre_cliente_reserva">
+                    </div>
+                </div>
+                <center><button type="submit" class="btn">Reserva ahora</button></center>
             </form>
         </div>
+        
+        
     </div>
     <!--Termina la sección de las reservas-->
 
