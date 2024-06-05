@@ -20,14 +20,17 @@
 
 html
 {
-    background-color: black;
-font-size: 62.5%;
-overflow-x: hidden;
-scroll-behavior: smooth;
+    background-color: #333;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* estilo de la barra de navegacion EMPIEZA */
-
+a
+{
+    color: black;
+}
 header
 {
     
@@ -465,113 +468,7 @@ header .iconos #menu
 }
 /*TERMINA estilo pie de pagina*/
 
-/*EMPIEZA ESTILO MENU*/
 
-.menu
-{
-    min-height: 100vh;
-    background-color: black;
-}
-.banner
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    margin-top: -100px;
-    margin-bottom: -100px;
-}
-.banner h2
-{
-    color: #cdaa7c;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 35px;
-    border: 1px solid #cdaa7c;
-    padding: 20px;
-    font-weight: 800;
-}
-.banner h3
-{
-    color: #fff;
-    padding: 20px;
-    font-weight: 500;
-    font-size: 25px;
-}
-.producto
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    min-height: 60vh;
-    padding: 50px;
-    border: 1px solid #cdaa7c;
-
-}
-.producto .producto-box
-{
-    height: 270px;
-    width: 160px;
-    margin: 30px;
-    background: rgba(0, 0, 0, 0.6);
-
-    border: 2px solid #cdaa7c;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.producto .producto-box img
-{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #cdaa7c;
-}
-.producto .producto-box h2
-{
-    color: #cdaa7c;
-    font-size: 15px;
-    font-weight: 400;
-    padding: 10px;
-}
-.producto .producto-box h3
-{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 5px;
-}
-.producto .producto-box .añadir-carrito
-{
-    padding: 5px 10px;
-    margin: 10px;
-    border: 1px solid #cdaa7c;
-    background-color: transparent;
-    color: #cdaa7c;
-    font-size: 8px;
-    text-transform: uppercase;
-    font-weight: 400;
-    transition: 0.3s ease-in;
-    cursor: pointer;
-}
-.producto .producto-box .añadir-carrito:hover
-{
-    background: #cdaa7c;
-    color: #050801;
-    box-shadow: 0 0 5px #cdaa7c,
-                0 0 25px #cdaa7c,
-                0 0 50px #cdaa7c,
-                0 0 200px #cdaa7c;
-}
-
-/*TERMINA ESTILO MENU*/
 
 /*ESTILO BARRA DE SCROLL*/
 
@@ -706,11 +603,15 @@ header .iconos #menu
         align-items: center;
     }
 
+   
 
     #carro
     {
         width: 90%;
-
+        display: inline;
+        bottom: 0;
+        top: auto;
+       
     }
 }
 

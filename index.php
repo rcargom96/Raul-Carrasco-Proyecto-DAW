@@ -20,79 +20,19 @@ require 'conexionbd.php';
     <header>
         <a href="#" class="logo"><img src="imagenes/logo.png" alt=""></a>
         <nav class="navbar">
-            <a href="index.html" class="activo">Inicio</a>
-            <a href="menu.html">Menu</a>
+            <a href="index.php" class="activo">Inicio</a>
+            <a href="menu.php">Menu</a>
             <a href="#about">Sobre Nosotros</a>
-            <a href="reserva.html">Reservas</a>
+            <a href="reserva.php">Reservas</a>
         </nav>
 
         <div class="iconos">
             <i class="fas fa-bars" id="menu"></i>
-            <i class="fas fa-shopping-cart" id="carrito"></i>
-            <i class="fas fa-user" id="form-open"></i>
+            <a href="sesion.php"><i class="fas fa-user" id="form-open"></i></a>
         </div>
     </header>
 
-    <!--Formulario Inicio Sesion y Registro-->
-        <section class="formularios">
-            <div class="form_cont">
-                <i class="fa-regular fa-circle-xmark form_cerrar"></i>
-                <!--Inicio de Sesion-->
-                <div class="form inicio_form">
-                    <form action="login.php" method="POST">
-                        <h2>Iniciar Sesion</h2>
-                        <div class="input_box">
-                            <input type="email" name="email" placeholder="Email" required>
-                            <i class="fa-solid fa-envelope email"></i>
-                        </div>
-                        <div class="input_box">
-                            <input type="password" name="contrasena" placeholder="Contraseña" required>
-                            <i class="fa-solid fa-lock password"></i>
-                        </div>
-                        <button class="btn-inicio-sesion">Iniciar Sesion</button>
-
-                        <div class="inicio_registro">
-                            ¿No tienes una cuenta? <a href="#" id="registro">Registrarse</a>
-                        </div>
-                    </form>
-                </div>
-
-                <!--Registrarse-->
-                <div class="form registro_form">
-                    <form action="registro.php" method="POST">
-                        <h2>Registrarse</h2>
-                        <div class="input_box">
-                            <input type="email" name="email" placeholder="Email" required>
-                            <i class="fa-solid fa-envelope email"></i>
-                        </div>
-                        <div class="input_box">
-                            <input type="password" name="contrasena" placeholder="Contraseña" required>
-                            <i class="fa-solid fa-lock password"></i>
-                        </div>
-                        <div class="input_box">
-                            <input type="text" name="nombre_usuario" placeholder="Nombre y apellidos" required>
-                            <i class="fa-solid fa-circle-user nombre"></i>
-                        </div>
-                        <!--
-                        <div class="input_box">
-                        <input type="text" placeholder="Direccion" required>
-                        <i class="fa-solid fa-map-location-dot direccion"></i>
-                        </div>
-                        -->
-                        <div class="input_box">
-                            <input type="text" name="telefono" placeholder="Telefono" required>
-                            <i class="fa-solid fa-phone telefono"></i>
-                        </div>
-                        <button class="btn-inicio-sesion">Registrarse</button>
-
-                        <div class="inicio_registro">
-                            ¿Ya tienes una cuenta? <a href="#" id="inicio">Iniciar Sesion</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    <!--TERMINA Formulario Inicio Sesion y Registro-->
+   
 
     <!--Termina el encabezado-->
 
@@ -146,7 +86,7 @@ require 'conexionbd.php';
 
     <!--Empieza el pie de página-->
     <section class="footer">
-        <img src="imagenes/logo.png" alt="">
+
 
         <div class="container">
             <div>
@@ -182,9 +122,6 @@ require 'conexionbd.php';
     <!--BOTON PARA VOLVER ARRIBA-->
 
     <a href="#"><button class="topbtn"><i class="fa-solid fa-angle-up"></i></button></a>
-
-    <!--Script FORMULARIO-->
-    <script src="js/formulario.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
