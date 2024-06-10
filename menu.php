@@ -42,55 +42,55 @@ require 'conexionbd.php';
         <!-- Contenedor de elementos -->
         <div class="contenedor-items">
             <div class="item">
-                <span class="titulo-item">Producto 1</span>
+                <span class="titulo-item">Pizza Hawaiana</span>
                 <img src="imagenes/f1.png" alt="" class="img-item">
                 <span class="precio-item">15,00 €</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
-                <span class="titulo-item">Producto 2</span>
+                <span class="titulo-item">Smash Burguer</span>
                 <img src="imagenes/f2.png" alt="" class="img-item">
                 <span class="precio-item">25,00 €</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
-                <span class="titulo-item">Producto 3</span>
+                <span class="titulo-item">Pizza Napolitana</span>
                 <img src="imagenes/f3.png" alt="" class="img-item">
                 <span class="precio-item">22,00 €</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
-                <span class="titulo-item">Producto 4</span>
+                <span class="titulo-item">Macarrones Ragú</span>
                 <img src="imagenes/f4.png" alt="" class="img-item">
                 <span class="precio-item">11,00 €</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
-                <span class="titulo-item">Producto 5</span>
+                <span class="titulo-item">Patatas Fritas</span>
                 <img src="imagenes/f5.png" alt="" class="img-item">
                 <span class="precio-item">9,00 €</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
-                <span class="titulo-item">Producto 6</span>
+                <span class="titulo-item">Pizza Variada</span>
                 <img src="imagenes/f6.png" alt="" class="img-item">
                 <span class="precio-item">17,00 €</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
-                <span class="titulo-item">Producto 7</span>
+                <span class="titulo-item">Hamburguesa Pollo</span>
                 <img src="imagenes/f7.png" alt="" class="img-item">
                 <span class="precio-item">12,00 €</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
-                <span class="titulo-item">Producto 8</span>
+                <span class="titulo-item">Hamburguesa Vegana</span>
                 <img src="imagenes/f8.png" alt="" class="img-item">
                 <span class="precio-item">2,00 €</span>
                 <button class="boton-item">Agregar al Carrito</button>
             </div>
             <div class="item">
-                <span class="titulo-item">Producto 9</span>
+                <span class="titulo-item">Fusilli</span>
                 <img src="imagenes/f9.png" alt="" class="img-item">
                 <span class="precio-item">7,00 €</span>
                 <button class="boton-item">Agregar al Carrito</button>

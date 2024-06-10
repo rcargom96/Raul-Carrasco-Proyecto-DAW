@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefono = $_POST['telefono'];
 
 
+
     $sql = "INSERT INTO usuarios (nombre_usuario, email, contrasena, telefono) VALUES ('$nombre_usuario', '$email', '$contrasena', '$telefono')";
 
     if ($conn->query($sql) === TRUE) {
@@ -17,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: index.php");
     } else {
  
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" ;
     }
 } else {
 

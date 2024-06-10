@@ -14,7 +14,7 @@
         <nav class="navbar">
             <a href="index.php" >Inicio</a>
             <a href="menu.php">Menu</a>
-            <a href="#about">Sobre Nosotros</a>
+            <a href="sobrenosotros.php">Sobre Nosotros</a>
             <a href="reserva.php" class="activo">Reservas</a>
         </nav>
 
@@ -73,7 +73,7 @@
                             <option value="5">5 personas</option>
                             <option value="6">6 personas</option>
                         </select>
-                        <input type="time" name="numero_personas">
+                        <input type="time" name="hora_reserva">
                     </div>
                     <div>
                         <input type="date" name="fecha_reserva">

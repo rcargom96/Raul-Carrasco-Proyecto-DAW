@@ -44,6 +44,16 @@ function ready(){
 //Elimino todos los elementos del carrito y lo oculto
 function pagarClicked(){
     alert("Gracias por la compra");
+    // Enviar solicitud AJAX para registrar el pedido
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "registrar_pedido.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log(xhr.responseText); // Manejar la respuesta del servidor aquí
+        }
+    };
+    xhr.send();
     //Elimino todos los elementos del carrito
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
     while (carritoItems.hasChildNodes()){

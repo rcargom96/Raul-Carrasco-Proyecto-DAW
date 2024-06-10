@@ -22,7 +22,7 @@ require 'conexionbd.php';
         <nav class="navbar">
             <a href="index.php" class="activo">Inicio</a>
             <a href="menu.php">Menu</a>
-            <a href="#about">Sobre Nosotros</a>
+            <a href="sobrenosotros.php">Sobre Nosotros</a>
             <a href="reserva.php">Reservas</a>
         </nav>
 
