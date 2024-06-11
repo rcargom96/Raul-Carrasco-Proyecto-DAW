@@ -34,7 +34,7 @@
 
     <div class="reserva" id="reserva">
         <div class="imagen">
-
+            
         </div>
         
         <div class="form">
@@ -96,11 +96,15 @@
         <div class="container">
             <div>
                 <h3>SOBRE NOSOTROS</h3>
-                <p>bla bla bla bla bla bla bla bla bla bla bla bla</p>
+                <p>
+                    <p>Términos y Condiciones</p>
+                    <p>Política de Privacidad</p>
+                    <p>Política de Cookies</p>
+                </p>
             </div>
 
             <div>
-                <h3>BLA BLA BLA BLA BLA</h3>
+                <h3>NUESTRAS REDES SOCIALES</h3>
                 
                 <ul>
                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -111,18 +115,18 @@
 
             <div>
                 <h3>CONTACTA CON NOSOTROS</h3>
-                <span>bla bla bla bla SL</span>
+                <span>SizzleBite Burgers SL</span>
                 <span>+ (34) 123456789</span>
-                <span>blabla@gmail.com</span>
-                <span>www.blabla.com</span>
+                <span>SizzleBiteBurgers@gmail.com</span>
+                <span>www.SizzleBiteBurgers.com</span>
             </div>
         </div>
 
-        <p>&copy;2024 Reserved by bla bla</p>
-    </section>
+        <p>&copy;2024 Reserved by SizzleBite Burgers SL</p>
+</section>
 
     <!--Termina el pie de página-->
-
+    
     <!--Script FORMULARIO-->
     <script src="js/formulario.js"></script>
     <!--BOTON PARA VOLVER ARRIBA-->

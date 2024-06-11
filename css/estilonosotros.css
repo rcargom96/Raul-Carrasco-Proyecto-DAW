@@ -99,6 +99,7 @@ header .iconos #menu
 
 .about
 {
+  padding: 0 5%;
   font-size: 16px;
   margin-top: 10%;
   margin-bottom: 5%;
@@ -108,9 +109,8 @@ header .iconos #menu
   color: #cdaa7c;
   margin-bottom: 20px;
   margin-top: 20px;
-  border-radius: 20px;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 .about h3
 {
@@ -119,7 +119,7 @@ header .iconos #menu
   margin-top: 20px;
   border-radius: 20px;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .about p{
@@ -127,6 +127,105 @@ header .iconos #menu
   color: white;
   font-size: 12px;
   text-align: center;
+}
+/*ESTILO TERMINOS Y CONDICIONES*/
+.terms {
+    font-size: 1.6rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 0 5%;
+  }
+  
+  .terms h2 {
+    color: #cdaa7c;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  .terms h3 {
+    color: #cdaa7c;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+  
+  .terms p, .terms ul {
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .terms ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+  
+
+  /*ESTILO CONDICIONES COOKIES*/
+
+  .cookies {
+    font-size: 1.6rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 0 5%;
+  }
+  
+  .cookies h2 {
+    color: #cdaa7c;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  .cookies h3 {
+    color: #cdaa7c;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+  
+  .cookies p, .cookies ul {
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cookies ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+
+  /*BANNER COOKIES*/
+  .cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: #cdaa7c;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+    display: none;
+}
+
+.cookie-banner p {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.cookie-banner a {
+    color: #cdaa7c;
+    text-decoration: underline;
+}
+
+.cookie-button {
+    background-color: #cdaa7c;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
 }
 
 /*EMPIEZA estilo pie de pagina*/
@@ -142,7 +241,7 @@ header .iconos #menu
     width: 100%;
     height: 13vh;
 }
-.footer p a
+.footer .container p a
 {
   color: #cdaa7c;
 }

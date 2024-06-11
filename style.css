@@ -360,7 +360,7 @@ header .iconos #menu
 .reserva .imagen
 {
     width: 55%;
-    background: url(foto.jpg);
+    background: url(imagenes/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

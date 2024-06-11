@@ -25,7 +25,7 @@ require 'conexionbd.php';
     <nav class="navbar">
         <a href="index.php" >Inicio</a>
         <a href="menu.php" class="activo">Menu</a>
-        <a href="#about">Sobre Nosotros</a>
+        <a href="sobrenosotros.php">Sobre Nosotros</a>
         <a href="reserva.php">Reservas</a>
     </nav>
 
@@ -147,6 +147,7 @@ require 'conexionbd.php';
             </div>
         </div>
     </section>
+    
 
     <!--BOTON PARA VOLVER ARRIBA-->
 

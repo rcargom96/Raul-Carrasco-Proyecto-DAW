@@ -44,34 +44,32 @@ require 'conexionbd.php';
                 <div class="swiper-slide slide slide1">
                     <div class="content">
                         <img src="" alt="">
-                        <h3>bla bla bla bla</h3>
-                        <h1>bla bla bla bla</h1>
+                        <h3>SizzleBite Burgers</h3>
+                        
                         <p>
-                            bla bla bla bla
+                            Realiza tu pedido ya!!
                         </p>
-                        <a href="#" class="btn">Pedir ahora</a>
+                        <a href="menu.php" class="btn">Pedir ahora</a>
                     </div>
                 </div>
                 <div class="swiper-slide slide slide2">
                     <div class="content">
                         <img src="" alt="">
-                        <h3>bla bla bla bla</h3>
-                        <h1>bla bla bla bla</h1>
-                        <p>
-                            bla bla bla bla
-                        </p>
-                        <a href="#" class="btn">Pedir ahora</a>
+                        <h3>Sabores únicos</h3>
+                        <p>¡Experimenta el mejor sabor!</p>
+                        
+                        <a href="menu.php" class="btn">Pedir ahora</a>
                     </div>
                 </div>
                 <div class="swiper-slide slide slide3">
                     <div class="content">
                         <img src="" alt="">
-                        <h3>bla bla bla bla</h3>
-                        <h1>bla bla bla bla</h1>
+                        <h3>Visitanos</h3>
+                        <p>Ven a nuestro restaurante</p>
                         <p>
-                            bla bla bla bla
+                            Reserva tu mesa!!
                         </p>
-                        <a href="#" class="btn">Pedir ahora</a>
+                        <a href="reserva.php" class="btn">Reservar ahora</a>
                     </div>
                 </div>
             </div>
@@ -91,11 +89,15 @@ require 'conexionbd.php';
         <div class="container">
             <div>
                 <h3>SOBRE NOSOTROS</h3>
-                <p>bla bla bla bla bla bla bla bla bla bla bla bla</p>
+                <p>
+                    <p>Términos y Condiciones</p>
+                    <p>Política de Privacidad</p>
+                    <p>Política de Cookies</p>
+                </p>
             </div>
 
             <div>
-                <h3>BLA BLA BLA BLA BLA</h3>
+                <h3>NUESTRAS REDES SOCIALES</h3>
                 
                 <ul>
                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -106,15 +108,15 @@ require 'conexionbd.php';
 
             <div>
                 <h3>CONTACTA CON NOSOTROS</h3>
-                <span>bla bla bla bla SL</span>
+                <span>SizzleBite Burgers SL</span>
                 <span>+ (34) 123456789</span>
-                <span>blabla@gmail.com</span>
-                <span>www.blabla.com</span>
+                <span>SizzleBiteBurgers@gmail.com</span>
+                <span>www.SizzleBiteBurgers.com</span>
             </div>
         </div>
 
-        <p>&copy;2024 Reserved by bla bla</p>
-    </section>
+        <p>&copy;2024 Reserved by SizzleBite Burgers SL</p>
+</section>
 
     <!--Termina el pie de página-->
 
@@ -147,5 +149,6 @@ require 'conexionbd.php';
     <!--Este script hace que al pulsar el icono de menu cuando la pantalla 
     es mas pequeña aparezcan los elementos del menu de navegacion-->
     <script src="js/menunav.js"></script>
+    
 </body>
 </html>
